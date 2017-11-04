@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diak.thinkanumber.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        >
+
+        <ImageView
+            android:id="@+id/imageView_elet1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/heart2"
+            />
+
+        <ImageView
+            android:id="@+id/imageView_elet2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/heart2"
+            />
+
+        <ImageView
+            android:id="@+id/imageView_elet3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/heart2"
+            />
+
+        <ImageView
+            android:id="@+id/imageView_elet4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/heart2"
+            />
+        <ImageView
+            android:id="@+id/imageView_elet5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/heart2"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_plus"
+        android:text="+"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_negative"
+        android:text="-"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:layout_below="@+id/btn_plus"
+        android:layout_alignLeft="@+id/btn_plus"
+        android:layout_alignStart="@+id/btn_plus"
+        android:layout_marginTop="96dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:text="Küldés"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_szoveg1_"
+        android:text="Találd ki a számod"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_szam"
+        android:text="0"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/btn_plus"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
